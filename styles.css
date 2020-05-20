@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
 
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 /* setting up fonts for the whole page */
 h1, h2, h3 {
   font-family:  'Courgette', cursive;
