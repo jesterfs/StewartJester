@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
+
+
+/* setting up fonts for the whole page */
+h1, h2, h3 {
+  font-family:  'Courgette', cursive;
+}
+p, h4, h5, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+/* styles for flex box */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.group img {
+  width: 100%;
+}
+/* ------------------------ */
+/* STLYLES FOR WHOLE DOCUMENT */
+/* ------------------------- */
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* styling the links */
+a {
+  text-decoration: none;
+}
+a:link {color:white;}
+a:visited {color:white;}
+a:hover {color:gray;}
+a:active {color:black;}
+
+/* seperate styling for footer/header links and main bodylinks */
+a.bodylinks {text-decoration: underline;}
+a.bodylinks:link {color: black;}
+a.bodylinks:visited {color:gray;}
+a.bodylinks:hover {color:red;}
+a.bodylinks:active {color:black;}
+
+/* styling for the headings on each section */
+.sectionheader {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* styles for page breaks
+*/
+hr {
+margin-top: 50px;
+/* makes it so only a single side of the border has a style, so it's one line */
+border-style: dotted none none none;
+border-color: black;
+height: 0px;
+border-width: 5px;
+/* makes it a small line of dots instead of a full width */
+width: 10%;
+}
+
+/* ================================ */
+/* style for header/nav */
+/* ---------------------------------- */
+/* style for header/nav */
+/* setting header background to black and fixing it so it scrolls with the user */
+
+header {
+  background-color: #000000;
+}
+
+/* container for logo and navbar. overflow keeps content in the section and clear keeps things from being
+to close together */
+header h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/* floats navbar to the right and sets up a little padding */
+header nav{
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  padding: 0 20px 0 0;
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+}
+
+/* styling for home */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  border-radius: 50%;
+  /* width: 25%; */
+  margin-top: 30px;
+  /* margin-left: auto; */
+}
+
+
+@media all and (min-width:1000px) {
+  .home {
+    flex-direction: row;
+  }
+}
+
+.intro {
+  margin-right: 10%;
+  margin-left: 10%;
+  /* width: 40%; */
+  padding-top: 15px;
+  float: right;
+}
+
+@media all and (min-width: 800px) {
+  .intro {
+    margin-right: auto;
+    margin-left: 100px;
+    /* width: 40%; */
+    padding-top: 50px;
+    float: right;
+  }
+}
+
+
+
+
+.introtitle {
+  font-size: 45px;
+}
+
+.introtext {
+  font-size: 25px;
+}
+/* --------------- */
+/* portfolio */
+/* --------------- */
+
+
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* makes the boxes all take up the same width, used percentages so it is slightly responsive */
+
+.samplebox {
+  display: flex;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+
+
+}
+
+.sampletext3 {
+  padding-left: 0;
+}
+
+@media all and (min-width: 800px){
+  .portfolio {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+.webdevsamples {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.webdevbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media all and (min-width: 800px) {
+  .webdevsamples {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+.sampletitle {
+  text-align: center;
+}
+
+.sampletext {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webdevtext {
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.webdevbox {
+  width: 100%;
+  /* border-style: solid; */
+  /* border-color: black; */
+  text-align: left;
+  margin: 0;
+}
+
+/* styling services */
+.servicegroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+@media all and (min-width: 800px) {
+  .servicegroup {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+/* styling for about me */
+/* -------- */
+.about {
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.abouttext {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* contact page */
+
+.emailpara {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+/* makes the form only take up half the page, and margins on auto center it */
+.contactform {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #D3D3D3;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+@media all and (min-width:800px) {
+  .contactform {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+/* makes it so each label/field combo take up the full line */
+.entries {
+  width: 100%;
+}
+
+.inputs {
+
+  margin-top: 10px;
+}
+
+.firstlabel {
+  margin-top: 30px;
+}
+
+.inputlabel {
+  margin-left: auto;
+
+}
+
+.inputfield {
+  /* margin-left: auto; */
+  margin-right: 10%;
+  margin-left: 40%;
+  width: 60%;
+  margin-bottom: 10px;
+  /* margin-right: auto; */
+}
+
+
+@media all and (min-width: 800px) {
+  .inputs {
+    margin-top: 30px;
+  }
+  .inputlabel {
+    margin-left: 60px;
+  }
+  .inputfield {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 50%;
+    width: 60%;
+    /* margin-right: auto; */
+  }
+
+}
+
+
+
+
+/* makes the fields longer */
+.inputfield {
+  margin-left: 50px;
+  width: 60%;
+  /* margin-right: auto; */
+}
+
+.contactmethod {
+  margin-left: 50px;
+}
+
+@media all and (min-width: 800px) {
+  .contactmethod {
+    margin-left: 155px;
+
+  }
+}
+
+
+.message {
+  height: 200px;
+  margin-left: 45px;
+}
+
+@media all and (min-width: 800px) {
+  .message {
+    margin-left: 35px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.submitbutton {
+  margin-top: 30px;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: 30px;
+}
+
+
+/* footer */
+/* ------- */
+
+/* line height just spaces things out */
+footer {
+  background-color: #000000;
+  /* display: flex; */
+
+}
+
+.footerflex1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footerflex1 ul {
+  list-style-type: none;
+}
+
+.boxhead {
+  color: white;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media all and (min-width: 800px) {
+  .footerflex1 {
+    justify-content: space-around;
+  }
+
+}
+
+.copyright {
+  display: block;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+}
