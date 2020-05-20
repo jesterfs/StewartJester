@@ -112,7 +112,7 @@ header {
 /* container for logo and navbar. overflow keeps content in the section and clear keeps things from being
 to close together */
 header h1 {
-  color: white;
+  color: red;
   text-align: center;
   margin: 0;
   padding-top: 20px;
