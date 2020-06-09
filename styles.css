@@ -13,6 +13,10 @@ main li {
   margin-top: 20px;
 }
 
+main ul {
+  padding-left: 0;
+}
+
 /* setting up fonts for the whole page */
 h1, h2, h3 {
   font-family:  'Courgette', cursive;
@@ -24,7 +28,9 @@ p, h4, h5, a {
 
 ul {
   list-style-type: none;
+  /* padding-left: 0; */
 }
+
 
 /* styles for flex box */
 .group {
@@ -234,7 +240,8 @@ header nav ul li a {
 }
 
 .sampletext3 {
-  padding-left: 0;
+  /* padding-left: 0; */
+  
 }
 
 @media all and (min-width: 800px){
@@ -274,11 +281,26 @@ header nav ul li a {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  width: 57%;
 }
+
+@media all and (min-width: 800px){
+  .sampletext {
+    width: 100%;
+  }
+}
+
 
 .webdevtext {
   margin-left: 20%;
-  margin-right: auto;
+  margin-right: 10%;
+}
+
+@media all and (min-width: 800px){
+  .webdevtext {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .webdevbox {
@@ -306,7 +328,7 @@ header nav ul li a {
 @media all and (min-width: 800px) {
   .servicegroup {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -413,7 +435,7 @@ header nav ul li a {
 }
 
 .contactmethod {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 @media all and (min-width: 800px) {
@@ -453,9 +475,18 @@ header nav ul li a {
 footer {
   background-color: #000000;
   padding-bottom: 10px;
+  padding-right: 15%;
+  padding-left: 0;
   /* display: flex; */
 
 }
+
+@media all and (min-width: 800px){
+  footer {
+    padding-right: 0;
+  }
+}
+
 
 .footerflex1 {
   display: flex;
