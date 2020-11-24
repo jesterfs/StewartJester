@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;700&display=swap');
 
 html,body
 {
@@ -23,6 +22,14 @@ h1, h2, h3 {
 }
 p, h4, h5, a {
   font-family: 'Montserrat', sans-serif;
+}
+
+p, a {
+  font-weight: normal;
+}
+
+h4, h5 {
+  font-weight: bold;
 }
 
 
@@ -323,7 +330,7 @@ header nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  margin: 0px;
 }
 
 @media all and (min-width: 800px) {
@@ -331,7 +338,11 @@ header nav ul li a {
     flex-direction: row;
     justify-content: space-between;
   }
+  .servicebox {
+    margin: 10px;
+  }
 }
+
 
 
 /* styling for about me */
