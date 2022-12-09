@@ -68,7 +68,8 @@ ul {
 }
 
 .group img {
-  width: 100%;
+  width: 90%;
+  display: none;
 }
 /* ------------------------ */
 /* STLYLES FOR WHOLE DOCUMENT */
@@ -210,6 +211,7 @@ header nav ul li a {
     padding-top: 50px;
     float: right;
   }
+  
 }
 
 
@@ -313,7 +315,15 @@ header nav ul li a {
     margin-left: 0;
     margin-right: 0;
   }
+
+  
 }
+
+@media all and (min-width: 1000px) {
+  .group img {
+    display: block;
+  }
+} 
 
 .webdevbox {
   width: 100%;
